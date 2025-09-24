@@ -1,4 +1,4 @@
-# Usa una imagen base de Java 11
+# Usa una imagen base de Java 11 (compatible con tu proyecto)
 FROM eclipse-temurin:11-jre
 
 # Crea un directorio para la app
@@ -11,4 +11,4 @@ COPY target/infra-eureka-server-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8761
 
 # Comando para arrancar el servidor
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
