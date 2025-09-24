@@ -1,4 +1,4 @@
-# Usa una imagen base de Java 11 (compatible con tu proyecto)
+# Usa una imagen base de Java 11
 FROM eclipse-temurin:11-jre
 
 # Crea un directorio para la app
